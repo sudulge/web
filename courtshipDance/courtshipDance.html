@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구애의 춤</title>
+    <style>
+        body {
+            height: 98vh;
+            background: url('src/background.png') no-repeat center/cover #efe4b0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1624px;
+            height: 177px;
+            margin-top: 50px;
+            background-image: url("src/4.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            font-size: 50px;
+            color: #FFFFFF;
+        }
+        .background img {
+            margin: 20px;
+        }
+        .timer {
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        .clear {
+            width: 466px;
+            height: 135px;
+            background-image: url("src/hidden.png");
+            margin-top: 150px;
+        }
+    </style>
+    <link rel="icon" href="src/mapleico48.png" type="image/x-icon" sizes="48x48">
+</head>
+<body>
+    <div class="container">
+        <button class="start">시작</button>
+        <div>
+            <button class="on" id="bgm">BGM ON</button>
+            <button class="off" id="hit">effect OFF</button>
+        </div>
+        <div class="timer">남은시간 60.00 초</div>
+        <div class="background">스페이스바 눌러서 시작</div>
+        <div class="clear"></div>
+    </div>
+    <script src="courtshipDance.js"></script>
+</body>
+</html>
