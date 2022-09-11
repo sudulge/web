@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트위치 멀티스크린</title>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <link rel="stylesheet" href="twitchMultiScreen.css">
+</head>
+<body>
+    <div class="content" layout="0">
+        <div class="videowrapper" layout="0">
+        </div>
+
+        <div class="chatwrapper" layout="0">
+        </div>
+
+        <div class="buttons">
+            <button id="change">
+                전환
+            </button>
+            <button id="setting">
+                설정
+            </button>
+            <div id="settinginterface">
+                <div id="input">
+                    <input type="text" id="inputname" placeholder="트위치 아이디" onkeyup="if(window.event.keyCode==13&&$inputname.value!=''){addstream($inputname.value)}">
+                </div>
+                <div id="members">
+                    <button id="woowakgood" class="member"></button>
+                    <button id="vo_ine" class="member"></button>
+                    <button id="jingburger" class="member"></button>
+                    <button id="lilpaaaaaa" class="member"></button>
+                    <button id="cotton__123" class="member"></button>
+                    <button id="gosegugosegu" class="member"></button>
+                    <button id="viichan6" class="member"></button>
+                </div>
+                <div id="display">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="twitchMultiScreen.js"></script>
+</body>
+</html>
