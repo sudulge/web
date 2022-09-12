@@ -12,7 +12,7 @@ const $videowrapper = document.querySelector(".videowrapper")
 const $chatwrapper = document.querySelector(".chatwrapper")
 
 
-layoutlist = [['인덱스 length랑 맞추려고 넣어놓음'], ['1-1'], ['2-1','2-2', '2-3'], ['3-1', '3-2', '3-3'], ['4-1', '4-2', '4-3', '4-4']]
+layoutlist = [['인덱스 length랑 맞추려고 넣어놓음 혐그방지'], ['1-1'], ['2-1','2-2', '2-3'], ['3-1', '3-2', '3-3'], ['4-1', '4-2', '4-3', '4-4']]
 
 
 $settingbutton.addEventListener('click', function() {
@@ -37,20 +37,25 @@ function addstream(name) {
         makelayoutbuttons()
         for (let i in $videowrapper.children) {
             $videowrapper.children[i].setAttribute('index', Number(i)+1)
+            $chatwrapper.children[i].setAttribute('index', Number(i)+1)
+            $videowrapper.children[i].setAttribute('style', `order: ${Number(i)+1};`)
+            $chatwrapper.children[i].setAttribute('style', `order: ${Number(i)+1};`)
         }
         return
     }
     let index = $videowrapper.children.length + 1
     let video = document.createElement('iframe')
     video.setAttribute('src', `https://player.twitch.tv/?channel=${name}&parent=sudulge.github.io&mtued=false`)
-    video.setAttribute('index', index)
     video.setAttribute('name', name)
+    video.setAttribute('index', index)
+    video.setAttribute('style', `order: ${index};`)
     video.setAttribute('frameborder', '0')
     video.setAttribute('allowfullscreen', true)
     let chat = document.createElement('iframe')
     chat.setAttribute('src', `https://www.twitch.tv/embed/${name}/chat?darkpopout&parent=sudulge.github.io`)
-    chat.setAttribute('index', index)
     chat.setAttribute('name', name)
+    chat.setAttribute('index', index)
+    chat.setAttribute('style', `order: ${index};`)
     chat.setAttribute('frameborder', '0')
     $videowrapper.appendChild(video)
     $chatwrapper.appendChild(chat)
