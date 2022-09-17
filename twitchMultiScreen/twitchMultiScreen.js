@@ -12,7 +12,7 @@ const $videowrapper = document.querySelector(".videowrapper")
 const $chatwrapper = document.querySelector(".chatwrapper")
 
 
-layoutlist = [['인덱스 length랑 맞추려고 넣어놓음 혐그방지'], ['1-1'], ['2-1','2-2', '2-3'], ['3-1', '3-2', '3-3'], ['4-1', '4-2', '4-3', '4-4']]
+layoutlist = [['인덱스 length랑 맞추려고 넣어놓음 혐그방지'], ['1-1'], ['2-1','2-2', '2-3'], ['3-1', '3-2', '3-3'], ['4-1', '4-2', '4-3', '4-4'], ['5-1'], ['6-1']]
 
 
 $settingbutton.addEventListener('click', function() {
