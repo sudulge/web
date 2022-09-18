@@ -45,7 +45,7 @@ function addstream(name) {
     }
     let index = $videowrapper.children.length + 1
     let video = document.createElement('iframe')
-    video.setAttribute('src', `https://player.twitch.tv/?channel=${name}&parent=sudulge.github.io&mtued=false`)
+    video.setAttribute('src', `https://player.twitch.tv/?channel=${name}&parent=sudulge.github.io&muted=false`)
     video.setAttribute('name', name)
     video.setAttribute('index', index)
     video.setAttribute('style', `order: ${index};`)
