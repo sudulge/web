@@ -1,0 +1,25 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    font-size: 30px;
+}
+
+#scorediv {
+    font-size: 50px;
+}
+
+canvas {
+    border: 1px solid black;
+}
