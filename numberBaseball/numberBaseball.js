@@ -1,5 +1,6 @@
-const $input = document.querySelector('#input');
 const $form = document.querySelector('#form');
+const $input = document.querySelector('#input');
+const $submit = document.querySelector('#submit');
 const $result = document.querySelector('#result');
 const $logs = document.querySelector('#logs'); 
 const HRnumber = [];
@@ -66,6 +67,9 @@ $form.addEventListener('submit', (event) => {
         $logs.append(`${value}: ${strike}S ${ball}B`, document.createElement('br'))
         tries.push(value)
         $result.textContent = `홈런! ${tries.length}회 만에 맞추셨습니다`
+        $input.disabled = true
+        $submit.disabled = true
+        
     }
     else if (strike == 0 && ball == 0){
         $result.textContent = (`${value}: OUT`)
