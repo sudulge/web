@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    border: 0;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+}
+
+.content {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white
+}
+
+.item:hover {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+.original {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    z-index: 1;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.side {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 100px;
+}
+
+#images {
+    display: flex;
+    margin-top: 150px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+[index='1'] {
+    background-image: url(images/1/image.jpg);
+    background-size: cover;
+}
+[index='2'] {
+    background-image: url(images/2/image.jpg);
+    background-size: cover;
+}
+[index='3'] {
+    background-image: url(images/3/image.jpg);
+    background-size: cover;
+}
+[index='4'] {
+    background-image: url(images/4/image.jpg);
+    background-size: cover;
+}
+[index='5'] {
+    background-image: url(images/5/image.jpg);
+    background-size: cover;
+}
+[index='6'] {
+    background-image: url(images/6/image.jpg);
+    background-size: cover;
+}
+[index='7'] {
+    background-image: url(images/7/image.jpg);
+    background-size: cover;
+}
